@@ -36,7 +36,7 @@
     var map = L.map('map', {
       zoomControl: false, // Add zoom control separately below
       center: [-17.824858,31.053028], // Initial map center
-      zoom: 10, // Initial zoom level
+      zoom: 5, // Initial zoom level
       attributionControl: false, // Instead of default attribution, we add custom at the bottom of script
       scrollWheelZoom: false
     })
@@ -48,7 +48,7 @@
     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
       subdomains: 'abcd',
-      maxZoom: 10,
+      maxZoom: 5,
     }).addTo(map)
 
     // Add geographical labels only layer on top of baselayer
